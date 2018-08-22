@@ -311,7 +311,7 @@ public class FullscreenActivity extends Activity {
         JSONObject q = new JSONObject();
         try {
             Random r = new Random();
-            int i1 = r.nextInt(4383 - 1) + 1;
+            int i1 = r.nextInt(4373 - 1) + 1;
             JSONObject obj = new JSONObject(loadJSONFromAsset("hpquotes.json"));
             JSONArray m_jArry = obj.getJSONArray("quotes");
             ArrayList<HashMap<String, String>> formList = new ArrayList<HashMap<String, String>>();
