@@ -43,7 +43,7 @@
         android:id="@+id/textClock"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="5dp"
+        android:layout_margin="13.5dp"
         android:format12Hour="hh:mm:ss"
         android:gravity="center_vertical"
         android:textColor="#ffffff"

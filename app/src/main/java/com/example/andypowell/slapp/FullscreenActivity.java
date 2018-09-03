@@ -231,7 +231,16 @@ public class FullscreenActivity extends Activity {
         // created, to briefly hint to the user that UI controls
         // are available.
         delayedHide(100);
+
     }
+    @Override
+    protected void onResume() {
+        super.onResume();
+        mVisible = true;
+        toggle();
+
+}
+
 
     private void toggle() {
         if (mVisible) {
@@ -311,7 +320,7 @@ public class FullscreenActivity extends Activity {
         JSONObject q = new JSONObject();
         try {
             Random r = new Random();
-            int i1 = r.nextInt(4373 - 1) + 1;
+            int i1 = r.nextInt(4372 - 1) + 1;
             JSONObject obj = new JSONObject(loadJSONFromAsset("hpquotes.json"));
             JSONArray m_jArry = obj.getJSONArray("quotes");
             ArrayList<HashMap<String, String>> formList = new ArrayList<HashMap<String, String>>();
