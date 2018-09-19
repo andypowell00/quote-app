@@ -307,8 +307,6 @@ public class FullscreenActivity extends Activity {
             int i1 = r.nextInt(8022 - 1) + 1;
             JSONObject obj = new JSONObject(loadJSONFromAsset("toquotes.json"));
             JSONArray m_jArry = obj.getJSONArray("quotes");
-            ArrayList<HashMap<String, String>> formList = new ArrayList<HashMap<String, String>>();
-            HashMap<String, String> m_li;
             JSONObject jo_inside = m_jArry.getJSONObject(i1);
             q = jo_inside;
         } catch (JSONException e) {
@@ -323,8 +321,6 @@ public class FullscreenActivity extends Activity {
             int i1 = r.nextInt(4368 - 1) + 1;
             JSONObject obj = new JSONObject(loadJSONFromAsset("hpquotes.json"));
             JSONArray m_jArry = obj.getJSONArray("quotes");
-            ArrayList<HashMap<String, String>> formList = new ArrayList<HashMap<String, String>>();
-            HashMap<String, String> m_li;
             JSONObject jo_inside = m_jArry.getJSONObject(i1);
             q = jo_inside;
 
